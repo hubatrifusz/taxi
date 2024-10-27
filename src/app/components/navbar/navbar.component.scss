@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: $secondary-color;
+  position: fixed;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  top: -100vh;
+  transition: top 0.3s ease;
+
+  ul {
+    li {
+        list-style: none;
+      a {
+        padding-right: 10rem;
+        color: $accent-color;
+        margin: 1rem;
+        font-family: "MainFont";
+        font-size: 8rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: font-size 0.5s ease;
+      }
+
+      a:hover {
+        font-size: 15rem;
+      }
+    }
+  }
+}
+
+button {
+  position: fixed;
+  z-index: 10;
+}
+
+.visible {
+  top: 0;
+}
+
+@keyframes flyIn {
+  from {
+    top: -100vh;
+  }
+  to {
+    top: 0;
+  }
+}

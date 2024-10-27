@@ -1,0 +1,14 @@
+$main-color: #0F0F0F;
+$secondary-color: #FDFFFC;
+$accent-color: #890620;
+$neutral-color: #7F7979;
+
+@font-face {
+  font-family: MainFont;
+  src: url('../assets/fonts/BebasNeue-Regular.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: MainFont2;
+  src: url('../assets/fonts/RobotoFlex.ttf') format("opentype");
+}
