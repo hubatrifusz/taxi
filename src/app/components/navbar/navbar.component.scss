@@ -14,13 +14,16 @@ nav {
 
   ul {
     li {
-        list-style: none;
+      list-style: none;
       a {
+        float: right;
+        display: block;
+        min-width: 30vw;
         padding-right: 10rem;
         color: $accent-color;
         margin: 1rem;
         font-family: "MainFont";
-        font-size: 8rem;
+        font-size: 7rem;
         text-transform: capitalize;
         text-decoration: none;
         transition: font-size 0.5s ease;
@@ -48,5 +51,42 @@ button {
   }
   to {
     top: 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+
+  .navIcon {
+    margin: 1rem;
+    width: 3rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      position: absolute;
+      display: block;
+      height: 4px;
+      width: 2.5rem;
+      background-color: $secondary-color;
+      border-radius: 4px;
+      transition: transform 0.2s ease-in-out;
+      z-index: 10;
+    }
+
+    span.open:first-child {
+      transform: rotate(45deg);
+      background-color: $main-color;
+    }
+
+    span.open:last-child {
+      transform: rotate(-45deg);
+      background-color: $main-color;
+    }
   }
 }

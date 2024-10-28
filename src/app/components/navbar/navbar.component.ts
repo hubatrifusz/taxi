@@ -9,8 +9,19 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   showNavbar = false;
+  open = false;
 
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
   }
+
+  openNavbar() {
+    const topSpan = document.querySelector('.navIcon')!.children[0];
+    const bottomSpan = document.querySelector('.navIcon')!.children[1];
+    topSpan.classList.toggle('open')
+    bottomSpan.classList.toggle('open');
+
+    this.showNavbar = !this.showNavbar;
+  }
+
 }
