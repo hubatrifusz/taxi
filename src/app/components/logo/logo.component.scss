@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+
+  .symbol {
+    background-color: blue;
+    display: flex;
+    height: 100%;
+
+    span {
+      display: block;
+      background-color: $logo-line-color2;
+      margin-right: 0.3rem;
+      aspect-ratio: 1.6/19;
+      height: 100%;
+      border-radius: 9px;
+      transform: rotateZ(40deg);
+    }
+
+    span:first-child {
+      transform: rotateZ(40deg) translateY(0.2rem);
+      background-color: $logo-line-color1;
+    }
+
+    span:last-child {
+      background-color: $logo-line-color3;
+    }
+  }
+
+  .title {
+    color: $title-dark-color;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 4rem;
+    background-color: $main-color;
+    padding: 0.5rem;
+    letter-spacing: 0.2rem;
+  }
+}
