@@ -36,11 +36,6 @@ nav {
   }
 }
 
-button {
-  position: fixed;
-  z-index: 10;
-}
-
 .visible {
   top: 0;
 }
@@ -61,32 +56,42 @@ button {
 
   .navIcon {
     margin: 1rem;
-    width: 3rem;
+    width: 2rem;
     height: 1.5rem;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 
     span {
       position: absolute;
       display: block;
       height: 4px;
-      width: 2.5rem;
+      width: 2rem;
       background-color: $secondary-color;
       border-radius: 4px;
       transition: transform 0.2s ease-in-out;
-      z-index: 10;
+    }
+
+    span:first-child {
+      margin-top: -0.6rem;
+    }
+
+    span:last-child {
+      margin-top: 0.6rem;
     }
 
     span.open:first-child {
       transform: rotate(45deg);
       background-color: $main-color;
+      margin-top: 0;
     }
 
     span.open:last-child {
       transform: rotate(-45deg);
       background-color: $main-color;
+      margin-top: 0;
     }
   }
 }

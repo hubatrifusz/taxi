@@ -9,11 +9,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   showNavbar = false;
-  open = false;
-
-  toggleNavbar() {
-    this.showNavbar = !this.showNavbar;
-  }
 
   openNavbar() {
     const topSpan = document.querySelector('.navIcon')!.children[0];
