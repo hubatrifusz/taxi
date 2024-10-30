@@ -52,12 +52,11 @@ nav {
 .navbar {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  background-color: #fff;
-  height: 7%;
+  justify-content: space-between;
+  height: 8%;
 
   .navIcon {
-    margin: 1rem;
+    margin: auto 2rem auto 0;
     width: 2rem;
     height: 1.5rem;
     justify-content: center;
