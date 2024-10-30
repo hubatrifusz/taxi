@@ -1,9 +1,22 @@
 $main-color: #151517;
-$secondary-color: #d4d4d6;
-$accent-color: #475363;
+$secondary-color: #f5f6f8;
+$accent-color: #46515f;
+$antracit: #3f3d3b;
+$light-gray: #a4a4a4;
 
-$title-dark-color: #7a7a7c;
 
-$logo-line-color1: #1c1c1e;
-$logo-line-color2: #242424;
-$logo-line-color3: #333335;
+// $title-dark-color: #7a7a7c;
+
+// $logo-line-color1: #1c1c1e;
+// $logo-line-color2: #242424;
+// $logo-line-color3: #333335;
+
+@font-face {
+  font-family: Panchang;
+  src: url('../assets/fonts/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url('../assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf') format("opentype");
+}

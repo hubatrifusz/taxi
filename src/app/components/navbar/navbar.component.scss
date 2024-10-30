@@ -3,7 +3,7 @@
 nav {
   width: 100vw;
   height: 100vh;
-  background-color: $secondary-color;
+  background-color: $antracit;
   position: fixed;
   display: flex;
   align-items: end;
@@ -20,9 +20,9 @@ nav {
         display: block;
         min-width: 30vw;
         padding-right: 10rem;
-        color: $accent-color;
+        color: $secondary-color;
         margin: 1rem;
-        font-family: "MainFont";
+        font-family: "Panchang";
         font-size: 7rem;
         text-transform: capitalize;
         text-decoration: none;
@@ -30,8 +30,17 @@ nav {
       }
 
       a:hover {
-        font-size: 15rem;
+        font-size: 10rem;
       }
+    }
+
+    li:nth-child(2) > a {
+      color: gray;
+    }
+
+    li:nth-child(2) > a:hover {
+      font-size: 7rem;
+      cursor: default;
     }
   }
 }
@@ -55,6 +64,10 @@ nav {
   justify-content: space-between;
   height: 8%;
 
+  img {
+    padding: 0.5rem;
+  }
+
   .navIcon {
     margin: auto 2rem auto 0;
     width: 2rem;
@@ -70,7 +83,7 @@ nav {
       display: block;
       height: 4px;
       width: 2rem;
-      background-color: $secondary-color;
+      background-color: $antracit;
       border-radius: 4px;
       transition: transform 0.2s ease-in-out;
     }
