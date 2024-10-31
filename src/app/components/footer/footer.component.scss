@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+
+footer {
+  width: 100vw;
+  height: 70%;
+  background-color: $secondary-color;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
