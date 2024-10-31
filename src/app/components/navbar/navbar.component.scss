@@ -3,7 +3,7 @@
 nav {
   width: 100vw;
   height: 100vh;
-  background-color: $antracit;
+  background-image: linear-gradient(0deg, $main-color, $antracit);
   position: fixed;
   display: flex;
   align-items: end;
@@ -26,16 +26,39 @@ nav {
         font-size: 7rem;
         text-transform: capitalize;
         text-decoration: none;
-        transition: font-size 0.5s ease;
+        transition: all 0.5s ease;
       }
 
-      a:hover {
-        font-size: 10rem;
+      .active {
+        // color: $main-color;
+      }
+
+      a::after {
+        content: " )";
+        opacity: 0;
+        transition: all 0.2s ease;
+        text-decoration: none !important;
+      }
+
+      a::before {
+        content: "( ";
+        opacity: 0;
+        transition: all 0.3s ease;
+        text-decoration: none !important;
+      }
+
+      a:hover::after {
+        opacity: 1;
+
+      }
+
+      a:hover::before {
+        opacity: 1;
       }
     }
 
     li:nth-child(2) > a {
-      color: gray;
+      opacity: 0.2;
     }
 
     li:nth-child(2) > a:hover {
@@ -66,6 +89,7 @@ nav {
 
   img {
     padding: 0.5rem;
+    z-index: 1;
   }
 
   .navIcon {
@@ -83,7 +107,7 @@ nav {
       display: block;
       height: 4px;
       width: 2rem;
-      background-color: $antracit;
+      background-color: $secondary-color;
       border-radius: 4px;
       transition: transform 0.2s ease-in-out;
     }
