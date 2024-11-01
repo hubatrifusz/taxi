@@ -7,4 +7,12 @@ footer {
   position: absolute;
   bottom: 0;
   display: flex;
+  clip-path: polygon(0% 10%, 20% 10%, 25% 0%, 75% 0%, 80% 10%, 100% 10%, 100% 100%, 0% 100%);
+
+  img {
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+    opacity: 0.1;
+    object-fit: cover;
+  }
 }

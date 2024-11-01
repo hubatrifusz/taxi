@@ -11,6 +11,7 @@ nav {
   flex-direction: column;
   top: -100vh;
   transition: top 0.3s ease;
+  z-index: 10;
 
   ul {
     li {
@@ -89,7 +90,7 @@ nav {
 
   img {
     padding: 0.5rem;
-    z-index: 1;
+    z-index: 11;
   }
 
   .navIcon {
@@ -100,7 +101,7 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 11;
 
     span {
       position: absolute;
@@ -122,13 +123,11 @@ nav {
 
     span.open:first-child {
       transform: rotate(45deg);
-      background-color: $main-color;
       margin-top: 0;
     }
 
     span.open:last-child {
       transform: rotate(-45deg);
-      background-color: $main-color;
       margin-top: 0;
     }
   }
