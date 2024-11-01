@@ -4,15 +4,87 @@ footer {
   width: 100vw;
   height: 70%;
   background-color: $secondary-color;
-  position: absolute;
+  position: absolute; // ! Delete in the final version
   bottom: 0;
   display: flex;
-  clip-path: polygon(0% 10%, 20% 10%, 25% 0%, 75% 0%, 80% 10%, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(
+    0% 10%,
+    20% 10%,
+    25% 0%,
+    75% 0%,
+    80% 10%,
+    100% 10%,
+    100% 100%,
+    0% 100%
+  );
+  justify-content: center;
+  align-items: center;
 
   img {
-    padding: 0 1rem 0 1rem;
+    position: absolute;
+    padding: 5px 1rem 5px 1rem;
     width: 100%;
-    opacity: 0.1;
+    height: 100%;
+    opacity: 0.05;
     object-fit: cover;
+    user-select: none;
+  }
+
+  .contentContainer {
+    display: flex;
+    z-index: 10;
+
+    .content {
+      margin: 10%;
+
+      h1 {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 7%;
+        margin: 4%;
+        font-family: Panchang;
+        font-weight: 400;
+        color: $main-color;
+        text-transform: capitalize;
+      }
+
+      ul {
+        li {
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+            color: $main-color;
+            font-family: Satoshi;
+            font-size: larger;
+            text-transform: capitalize;
+          }
+
+          a::after {
+            content: " )";
+            opacity: 0;
+            transition: all 0.2s ease;
+          }
+
+          a::before {
+            content: "( ";
+            opacity: 0;
+            transition: all 0.3s ease;
+          }
+
+          a:hover::after {
+            opacity: 1;
+          }
+
+          a:hover::before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen {
+
   }
 }

@@ -1,0 +1,17 @@
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 768px) {
+  display: none;
+}
+
+}
+
