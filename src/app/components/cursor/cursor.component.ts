@@ -14,7 +14,7 @@ export class CursorComponent {
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
-    this.cursorX = event.pageX;
-    this.cursorY = event.pageY;
+    this.cursorX = event.clientX;
+    this.cursorY = event.clientY;
   }
 }
