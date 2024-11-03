@@ -16,7 +16,9 @@ nav {
   ul {
     li {
       list-style: none;
+      width: 100%;
       a {
+        width: 100%;
         float: right;
         display: block;
         min-width: 30vw;
@@ -28,10 +30,12 @@ nav {
         text-transform: capitalize;
         text-decoration: none;
         transition: all 0.5s ease;
-      }
 
-      .active {
-        // color: $main-color;
+        @media (max-width: 1100px) {
+          font-size: 300%;
+          padding-right: 0;
+          text-align: center;
+        }
       }
 
       a::after {
@@ -50,7 +54,6 @@ nav {
 
       a:hover::after {
         opacity: 1;
-
       }
 
       a:hover::before {
@@ -66,6 +69,16 @@ nav {
       font-size: 7rem;
       cursor: default;
     }
+
+    @media (max-width: 1100px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 1100px) {
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -88,9 +101,13 @@ nav {
   justify-content: space-between;
   height: 8%;
 
-  img {
-    padding: 0.5rem;
+  #logo {
     z-index: 11;
+
+    img {
+      height: 100%;
+      padding: 0.5rem;
+    }
   }
 
   .navIcon {
