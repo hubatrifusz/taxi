@@ -6,6 +6,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { CursorComponent } from "./components/cursor/cursor.component";
 import { HomeComponent } from "./pages/home/home.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

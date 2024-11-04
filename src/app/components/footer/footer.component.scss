@@ -1,5 +1,16 @@
 @import "../../../styles/variables";
 
+.scrollCatcher {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.notVisible {
+  display: none;
+}
+
 footer {
   width: 100%;
   height: 70%;
@@ -17,7 +28,9 @@ footer {
   );
   justify-content: center;
   padding-top: 10%;
-  margin-top: -10%;
+  position: fixed;
+  bottom: 0;
+  transition: transform 0.2s ease-out;
 
   img {
     position: absolute;
@@ -104,4 +117,8 @@ footer {
       0% 100%
     );
   }
+}
+
+footer.show {
+  transform: translateY(0); /* Slide up when class is active */
 }

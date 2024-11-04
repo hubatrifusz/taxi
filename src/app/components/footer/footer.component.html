@@ -1,4 +1,6 @@
-<footer>
+<div class="scrollCatcher" (wheel)="onWindowScroll($event)" [ngClass]="{'notVisible': notVisible}"></div>
+
+<footer [ngStyle]="{'transform': 'translateY(' + scrolling + '%)'}" (wheel)="onWindowScroll($event)">
   <div class="contentContainer">
     <div class="content">
       <h1>oldalak</h1>
