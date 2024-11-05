@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.card {
+  margin: 1rem;
+  width: 20rem;
+  aspect-ratio: 1/1.5;
+  background: linear-gradient(55deg, $main-color 40%, #1d1d1f, $main-color 70%);;
+  border-radius: 2rem;
+  border: rgba(94, 94, 94, 0.4) solid 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  width: 21rem;
+  border-color: rgba(150, 150, 150, 0.4);
+}
