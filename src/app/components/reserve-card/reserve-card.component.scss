@@ -4,13 +4,15 @@
   margin: 1rem;
   width: 20rem;
   aspect-ratio: 1/1.5;
-  background: linear-gradient(55deg, $main-color 40%, #1d1d1f, $main-color 70%);;
+  background: linear-gradient(55deg, rgba(255, 255, 255, 0.1) 45%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1) 75%);;
   border-radius: 2rem;
-  border: rgba(94, 94, 94, 0.4) solid 2px;
+  border: rgba(255, 255, 255, 0.2) solid 2px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0.3rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
   width: 21rem;
-  border-color: rgba(150, 150, 150, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0.7rem 1.4rem 0.4rem rgba(0, 0, 0, 0.15);
 }
