@@ -37,7 +37,7 @@ export class RenderComponent {
 
     // Set up the camera
     this.camera = new THREE.PerspectiveCamera(
-      75,
+      45,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -101,7 +101,7 @@ export class RenderComponent {
     requestAnimationFrame(() => this.animate());
 
     // Rotate the group instead of the model
-    this.modelGroup.rotation.y += 0.001;
+    this.modelGroup.rotation.y += 0.0004;
 
     // Render the scene
     this.renderer.render(this.scene, this.camera);
