@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ReserveCardComponent {
   @Input() title: string = 'placeholder';
+  @Input() description: string =
+    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores accusantium amet quae nemo explicabo ipsum dolorem?';
 }
