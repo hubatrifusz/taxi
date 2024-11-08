@@ -35,10 +35,15 @@
   }
 }
 
-.bulleting {
+.bulletin {
   width: 100%;
-  display: flex;
   background-color: $main-color;
+  height: 40vh;
+
+  #bulletinContainer {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 #reserveCards {
