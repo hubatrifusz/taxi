@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+
+#loadingScreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #cf1212d7;
+  z-index: 100;
+}
