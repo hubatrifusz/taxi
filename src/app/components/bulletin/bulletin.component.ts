@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-bulletin',
@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class BulletinComponent {
   @Input() title: string = '*placeholder*';
+  @Input() content: string[] = ['list item 1', 'list item 2', 'list item 3'];
 }

@@ -1,7 +1,13 @@
 <div id="bulletin">
   <div id="title">
-    <img src="icons/placeholder.png" alt="">
+    <img src="icons/placeholder.png" alt="" />
     <h1>{{ title }}</h1>
   </div>
-  <div id="content"></div>
+  <div id="content">
+    <ul>
+      @for (item of content; track $index) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  </div>
 </div>
