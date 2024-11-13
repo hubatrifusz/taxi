@@ -1,20 +1,23 @@
 <section class="hero">
   <div class="heroContent">
     <img src="images/car.jpg" alt="" />
-    <h1>atlas ride</h1>
+    <h1>{{ displayedText }}</h1>
   </div>
 </section>
 
 <section class="bulletin">
   <div id="bulletinContainer">
-    <app-bulletin [title]="'bulletin1'" [content]="['asd', 'asd2', 'asd3']"></app-bulletin>
+    <app-bulletin
+      [title]="'bulletin1'"
+      [content]="['asd', 'asd2', 'asd3']"
+    ></app-bulletin>
     <app-bulletin [title]="'bulletin2'"></app-bulletin>
     <app-bulletin [title]="'bulletin3'"></app-bulletin>
   </div>
 </section>
 
 <section id="reserveCards">
-  <h1 id="caption">caption</h1>
+  <h1 appScrollIntoView="in-view" id="caption">caption</h1>
   <div class="cardContainer">
     <app-reserve-card [title]="'option_1'"></app-reserve-card>
     <app-reserve-card [title]="'option_2'"></app-reserve-card>

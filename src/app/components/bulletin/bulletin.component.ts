@@ -1,9 +1,10 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { ScrollIntoViewDirective } from '../../directives/scroll-into-view.directive';
 
 @Component({
   selector: 'app-bulletin',
   standalone: true,
-  imports: [],
+  imports: [ScrollIntoViewDirective],
   templateUrl: './bulletin.component.html',
   styleUrl: './bulletin.component.scss',
 })

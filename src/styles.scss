@@ -11,3 +11,8 @@
   color: $main-color;
   background-color: $secondary-color;
 }
+
+.in-view {
+  transition: opacity 1s ease-in;
+  opacity: 1 !important;
+}
