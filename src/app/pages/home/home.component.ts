@@ -17,7 +17,7 @@ export class HomeComponent {
 
   @HostListener('window:load')
   startTypingAnimation() {
-    const typingSpeed = 60;
+    const typingSpeed = 80;
 
     const typingInterval = setInterval(() => {
       if (this.currentIndex < this.fullText.length) {
