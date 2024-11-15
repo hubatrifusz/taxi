@@ -48,4 +48,11 @@ export class NavbarComponent {
 
     this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
   }
+
+  @HostListener('window:load')
+  loadNavbar() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar)
+    navbar.classList.remove('hide');
+  }
 }
