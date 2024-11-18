@@ -37,7 +37,7 @@
 
 .bulletin {
   width: 100%;
-  background-color: $main-color;
+  background: radial-gradient(circle at 100%, $main-color, #212127 100%);
   padding: 10% 0 10% 0;
 
   #bulletinContainer {

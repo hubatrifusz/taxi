@@ -13,7 +13,7 @@
     $secondary-color,
     rgb(55, 55, 57) 90%
   );
-  transition: all 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, opacity 0.5s ease-in-out;
   border-radius: 2rem;
   opacity: 0;
 
