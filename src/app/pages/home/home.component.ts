@@ -11,21 +11,5 @@ import { ScrollIntoViewDirective } from '../../directives/scroll-into-view.direc
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  fullText = 'atlas ride';
-  displayedText = '';
-  currentIndex = 0;
 
-  @HostListener('window:load')
-  startTypingAnimation() {
-    const typingSpeed = 80;
-
-    const typingInterval = setInterval(() => {
-      if (this.currentIndex < this.fullText.length) {
-        this.displayedText += this.fullText.charAt(this.currentIndex);
-        this.currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, typingSpeed);
-  }
 }

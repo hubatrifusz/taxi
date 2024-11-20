@@ -1,0 +1,53 @@
+@import "../../../styles/variables";
+
+.about-item {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+
+  width: 60vw;
+
+  margin: 0 2rem 5rem 2rem;
+
+  font-family: Satoshi;
+
+  img {
+    width: 30vw;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .description {
+    margin-right: 2rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: $secondary-color;
+    }
+
+    p {
+      color: $light-gray;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .about-item {
+    width: unset;
+
+    img {
+      aspect-ratio: 1/2;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  .description {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+}

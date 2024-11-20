@@ -190,9 +190,15 @@ nav {
       filter: brightness(1.3);
     }
   }
+  a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  #logo {
-    height: 150%;
+    #logo {
+      height: 150%;
+    }
   }
 
   .navIcon {
@@ -239,8 +245,10 @@ nav {
     width: 90%;
     margin: 1rem 5% 0 5%;
 
-    #logo {
-      height: 90%;
+    a {
+      #logo {
+        height: 90%;
+      }
     }
 
     #homeIcon {

@@ -18,11 +18,12 @@
       object-fit: contain;
     }
     h1 {
-      font-family: Panchang;
+      font-family: Satoshi;
       font-weight: 300;
-      text-transform: uppercase;
-      margin-left: 3vw;
+      margin-left: 2rem;
+      text-transform: capitalize;
       color: $secondary-color;
+      font-size: 1.5em;
     }
   }
 
@@ -30,10 +31,10 @@
     display: flex;
     justify-content: center;
     ul {
-      margin: 1vw;
+      margin: 1rem;
       li {
-        margin: 0.7vw;
-        color: $secondary-color;
+        margin: 1rem;
+        color: $light-gray;
         font-family: Satoshi;
         font-size: larger;
         font-weight: 300;
