@@ -6,7 +6,6 @@
     img {
       width: 4rem;
     }
-
   }
   #title {
     padding: 1rem 0 1rem 0;
@@ -16,6 +15,25 @@
     p {
       text-align: center;
       text-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #bulletin {
+
+    #icon {
+      img {
+        padding-top: 10vh;
+      }
+    }
+    #title {
+    }
+    #content {
+      max-width: 90vw;
+      p {
+
+      }
     }
   }
 }
