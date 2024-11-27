@@ -16,3 +16,17 @@
   transition: opacity 1s ease-in;
   opacity: 1 !important;
 }
+
+p {
+  font-family: Satoshi;
+  font-size: larger;
+  color: $text-color-s1;
+}
+
+h3 {
+  font-family: Satoshi;
+  font-size: 3rem;
+  font-weight: 500;
+  color: $text-color;
+
+}

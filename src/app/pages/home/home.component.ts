@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { ReserveCardComponent } from '../../components/reserve-card/reserve-card.component';
 import { BulletinComponent } from '../../components/bulletin/bulletin.component';
 import { ScrollIntoViewDirective } from '../../directives/scroll-into-view.directive';

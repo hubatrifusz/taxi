@@ -4,12 +4,18 @@ $accent-color: #46515f;
 $antracit: #3f3d3b;
 $light-gray: #a4a4a4;
 
+$text-color: hsl(220, 18%, 97%);
+$text-color-s1: hsl(210, 20%, 64%);
+$text-color-s2: hsl(220, 20%, 40%);
+
 @font-face {
   font-family: Panchang;
-  src: url('../assets/fonts/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf') format("opentype");
+  src: url("../assets/fonts/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf")
+    format("opentype");
 }
 
 @font-face {
   font-family: Satoshi;
-  src: url('../assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf') format("opentype");
+  src: url("../assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf")
+    format("opentype");
 }

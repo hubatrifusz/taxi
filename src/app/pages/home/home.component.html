@@ -1,16 +1,15 @@
 <section class="hero">
   <div class="heroContent">
-    <img src="SVG/szoveglogo_1_szurke.svg" alt="" appScrollIntoView="in-view"/>
+    <img src="SVG/szoveglogo_1_szurke.svg" alt="" appScrollIntoView="in-view" />
   </div>
   <section class="bulletin">
     <div class="line" appScrollIntoView="in-view"></div>
     <div id="bulletinContainer">
-      <app-bulletin
-        [title]="'Biztonság'"
-        [content]="['valami meggyőző dolog','mégtőbb meggyőző dolog', 'stb...']"
-      ></app-bulletin>
-      <app-bulletin [title]="'Title 2'"></app-bulletin>
-      <app-bulletin [title]="'Title 3'"></app-bulletin>
+      <app-bulletin></app-bulletin>
+      <div class="vertical-line"></div>
+      <app-bulletin></app-bulletin>
+      <div class="vertical-line"></div>
+      <app-bulletin></app-bulletin>
     </div>
   </section>
 </section>

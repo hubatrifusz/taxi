@@ -1,42 +1,21 @@
-@import "../../../styles/variables";
-
 #bulletin {
-  color: $secondary-color;
-  background-color: rgba(255, 0, 0, 0);
-  margin: 5vw 0 3vw 0;
-  opacity: 0;
-
-  #title {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #icon {
     img {
-      filter: invert(1);
-      height: 3vh;
-      object-fit: contain;
+      width: 4rem;
     }
-    h1 {
-      font-family: Satoshi;
-      font-weight: 300;
-      margin-left: 2rem;
-      text-transform: capitalize;
-      color: $secondary-color;
-      font-size: 1.5em;
-    }
-  }
 
+  }
+  #title {
+    padding: 1rem 0 1rem 0;
+  }
   #content {
-    display: flex;
-    justify-content: center;
-    ul {
-      margin: 1rem;
-      li {
-        margin: 1rem;
-        color: $light-gray;
-        font-family: Satoshi;
-        font-size: larger;
-        font-weight: 300;
-      }
+    max-width: 25vw;
+    p {
+      text-align: center;
+      text-wrap: wrap;
     }
   }
 }
