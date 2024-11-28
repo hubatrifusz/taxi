@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   max-width: calc(20rem + 3px);
   height: calc(30rem + 3px);
   margin: 1rem;
@@ -23,7 +24,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 4rem 3rem 4rem 3rem;
-    max-width: 20rem;
+    width: 20rem;
     height: 30rem;
     background: linear-gradient(
       55deg,
@@ -37,23 +38,37 @@
     transition: all 0.2s ease-in-out;
     box-shadow: 0.5rem 1rem 0.4rem rgba(0, 0, 0, 0.25);
 
-    #title {
-      color: $secondary-color;
-      font-family: Panchang;
-      font-weight: 300;
-      text-transform: uppercase;
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-decoration-color: rgba($secondary-color, 0.7);
-      text-underline-offset: 1.5rem;
-      margin-bottom: 3rem;
-    }
+    #content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #title {
 
-    #description {
-      color: $secondary-color;
-      text-align: center;
-      font-family: Satoshi;
-      font-weight: 200;
+        color: $secondary-color;
+        font-family: Satoshi;
+        letter-spacing: 1px;
+        font-weight: 300;
+
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: rgba($secondary-color, 0.7);
+        text-underline-offset: 1.5rem;
+
+        margin-bottom: 3rem;
+      }
+
+      #description {
+        width: 95%;
+        li {
+          color: $text-color-s1;
+          font-family: Satoshi;
+          font-weight: 200;
+          font-size: larger;
+          margin-bottom: 0.7rem;
+        }
+      }
     }
 
     button {

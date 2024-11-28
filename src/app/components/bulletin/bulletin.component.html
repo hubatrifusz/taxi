@@ -1,14 +1,15 @@
 <div id="bulletin">
   <div id="icon">
-    <img src="icons/placeholder.png" alt="" />
+    <img src="{{ imageURL }}" alt="" />
   </div>
   <div id="title">
-    <h3>Title</h3>
+    <h3>{{ title }}</h3>
   </div>
   <div id="content">
+    @for (item of content; track $index) {
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolor
-      alias fugit ipsa.
+      {{ item }}
     </p>
+    }
   </div>
 </div>

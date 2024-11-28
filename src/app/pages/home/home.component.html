@@ -5,21 +5,55 @@
   <section class="bulletin">
     <div class="line" appScrollIntoView="in-view"></div>
     <div id="bulletinContainer">
-      <app-bulletin></app-bulletin>
+      <app-bulletin
+        [imageURL]="'icons/security.png'"
+        [title]="'Megbízhatóság'"
+        [content]="[
+          'Több százezer kilométer tapasztalat az utakon.',
+          'Folyamatosan karbantartott és szervizelt gépjármű.'
+        ]"
+      ></app-bulletin>
       <div class="vertical-line"></div>
-      <app-bulletin></app-bulletin>
+      <app-bulletin
+        [imageURL]="'icons/time.png'"
+        [title]="'Pontosság'"
+        [content]="[
+          'Számunkra kiemelten fontos a precíz és pontos időbeosztás.',
+          'Bízza ránk, és garantáljuk a pontos érkezést!'
+        ]"
+      ></app-bulletin>
       <div class="vertical-line"></div>
-      <app-bulletin></app-bulletin>
+      <app-bulletin
+        [imageURL]="'icons/comfort.png'"
+        [title]="'Élmény'"
+        [content]="[
+          'Az Ön kényelme számunkra a legfontosabb.',
+          'Garantáljuk, hogy utazása nyugodt és kellemes lesz!'
+        ]"
+      ></app-bulletin>
     </div>
   </section>
 </section>
 
 <section id="reserveCards">
-  <h1 appScrollIntoView="in-view" id="caption">caption</h1>
+  <h1 appScrollIntoView="in-view" id="caption">Foglalás</h1>
   <div class="cardContainer">
-    <app-reserve-card [title]="'option_1'"></app-reserve-card>
-    <app-reserve-card [title]="'option_2'"></app-reserve-card>
-    <app-reserve-card [title]="'option_3'"></app-reserve-card>
+    <app-reserve-card
+      [title]="'Cégeknek'"
+      [description]="['Rendezvényekhez', 'Üzleti partnerek fogadásához', 'Munkaebédekhez és vacsorákhoz']"
+    ></app-reserve-card>
+    <app-reserve-card
+      [title]="'Magánszemélyeknek'"
+      [description]="['Utazna valahová?', 'Családi rendezvényre készül, vagy orvoshoz indul?', 'Ránk számíthat, minden helyzetben segítünk!']"
+    ></app-reserve-card>
+    <app-reserve-card
+      [title]="'Kutyásoknak'"
+      [description]="[
+        'Versenyre vagy kiállításra készülsz?',
+        'Orvoshoz vinnéd, vagy csak kirándulnál vele?',
+        'Bízd ránk, fél szavakból is megértjük egymást!'
+      ]"
+    ></app-reserve-card>
   </div>
 </section>
 

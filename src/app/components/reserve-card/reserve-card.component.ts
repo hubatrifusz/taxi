@@ -9,7 +9,6 @@ import { ScrollIntoViewDirective } from '../../directives/scroll-into-view.direc
   styleUrl: './reserve-card.component.scss',
 })
 export class ReserveCardComponent {
-  @Input() title: string = 'placeholder';
-  @Input() description: string =
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores accusantium amet quae nemo explicabo ipsum dolorem?';
+  @Input() title!: string;
+  @Input() description!: string[];
 }
