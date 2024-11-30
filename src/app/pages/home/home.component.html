@@ -1,6 +1,16 @@
 <section class="hero">
-  <div class="heroContent">
-    <img src="SVG/szoveglogo_1_szurke.svg" alt="" appScrollIntoView="in-view" />
+  <div class="heroContent" appScrollIntoView="in-view">
+    <div id="left-container" class="hero-image-container">
+      <img src="images/_DSC1261-Edit_sm.jpg" alt="" />
+    </div>
+
+    <div id="right-container" class="hero-image-container">
+      <img src="images/_DSC1219-Edit_sm.jpg" alt="" />
+    </div>
+
+    <div id="hero-logo" class="hero-image-container">
+      <img src="SVG/szoveglogo_1_feher.svg" alt="" />
+    </div>
   </div>
   <section class="bulletin">
     <div class="line" appScrollIntoView="in-view"></div>
@@ -40,11 +50,19 @@
   <div class="cardContainer">
     <app-reserve-card
       [title]="'Cégeknek'"
-      [description]="['Rendezvényekhez', 'Üzleti partnerek fogadásához', 'Munkaebédekhez és vacsorákhoz']"
+      [description]="[
+        'Rendezvényekhez',
+        'Üzleti partnerek fogadásához',
+        'Munkaebédekhez és vacsorákhoz'
+      ]"
     ></app-reserve-card>
     <app-reserve-card
       [title]="'Magánszemélyeknek'"
-      [description]="['Utazna valahová?', 'Családi rendezvényre készül, vagy orvoshoz indul?', 'Ránk számíthat, minden helyzetben segítünk!']"
+      [description]="[
+        'Utazna valahová?',
+        'Családi rendezvényre készül, vagy orvoshoz indul?',
+        'Ránk számíthat, minden helyzetben segítünk!'
+      ]"
     ></app-reserve-card>
     <app-reserve-card
       [title]="'Kutyásoknak'"
