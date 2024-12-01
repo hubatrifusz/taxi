@@ -1,0 +1,80 @@
+@import "../../../styles/variables";
+
+#booking-form {
+  max-width: 90vw;
+  form {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+
+    input {
+      padding: 1rem;
+      margin: 0.5rem 0 0.5rem;
+
+      border-radius: 0.5rem;
+      border: none;
+
+      font-family: Satoshi;
+      font-size: large;
+
+      background-color: $main-color-s1;
+    }
+
+    input::placeholder {
+      color: $text-color-s2;
+    }
+
+    #name {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: calc(50% - 0.5rem);
+      }
+    }
+
+    #locations {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      img {
+        width: 4rem;
+        padding: 0.5rem;
+      }
+
+      input {
+        width: calc(50% - 2rem);
+      }
+    }
+
+    #checkboxes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      margin: 0.5rem 0 0.5rem;
+      padding: 0 2rem 0 2rem;
+
+      .checkbox {
+        display: flex;
+      }
+
+      label {
+        margin-right: 0.5rem;
+        font-size: large;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .slider {
+        width: 1.5rem;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}

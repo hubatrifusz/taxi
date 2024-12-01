@@ -1,5 +1,9 @@
 @import "styles/variables";
 
+html {
+  background-color: $main-color;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

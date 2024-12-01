@@ -10,6 +10,4 @@ import { ScrollIntoViewDirective } from '../../directives/scroll-into-view.direc
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}
