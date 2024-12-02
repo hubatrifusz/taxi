@@ -2,29 +2,105 @@
 
 #booking {
   width: 100%;
-  height: 100vh;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding-top: 20vh;
+  padding: 20vh 0 20vh 0;
 
-  background: radial-gradient(
-    ellipse at top,
-    hsl(240, 8%, 15%) 10%,
-    $main-color 80%
-  );
+  #booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  h3 {
-    margin-bottom: 10vh;
+    padding: 10rem;
+
+    border: 2px solid $text-color-s1;
+    border-radius: $border-radius;
+
+    background: radial-gradient(
+      ellipse at top,
+      hsl(240, 8%, 15%) 10%,
+      $main-color 80%
+    );
+
+    h3 {
+      color: $text-color-s1;
+      padding-bottom: 5rem;
+    }
+
+    #progress-bar {
+      width: 40vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .progress-component {
+        .progress-line {
+          height: 3px;
+          width: 10vw;
+
+          margin: 2px;
+
+          background-color: $main-color-s4;
+
+          border-radius: 1rem;
+        }
+
+        h4 {
+          color: $main-color-s4;
+        }
+      }
+
+      .active {
+        .progress-line {
+          background-color: $main-color-s1;
+        }
+
+        h4 {
+          color: $main-color-s1;
+        }
+      }
+    }
+
+    #controls {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 90%;
+    }
   }
 }
 
-@media (max-width: "1100px") {
+@media (max-width: 1100px) {
   #booking {
-    h3{
-      font-size: 1.7rem;
+    width: 97%;
+    padding: 15vh 0 15vh 0;
+
+    #booking-container {
+      padding: 2rem;
+
+      h3 {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+      }
+
+      #progress-bar {
+        width: 100%;
+
+        .progress-component {
+          .progress-line {
+            width: 25vw;
+          }
+
+          h4 {
+            font-size: small;
+          }
+        }
+      }
     }
   }
 }

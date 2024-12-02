@@ -8,8 +8,21 @@ $text-color: hsl(220, 18%, 97%);
 $text-color-s1: hsl(210, 20%, 64%);
 $text-color-s2: hsl(220, 20%, 40%);
 
-$main-color-s1: hsl(240, 6%, 90%);
-$main-color-s2: hsl(240, 5%, 80%);
+$main-color-s1: hsl(240, 5%, 90%);
+$main-color-s2: hsl(240, 6%, 75%);
+$main-color-s3: hsl(240, 7%, 60%);
+$main-color-s4: hsl(240, 8%, 45%);
+
+$accent-color-100: hsl(214, 40%, 92%);
+$accent-color-200: hsl(214, 35%, 83%);
+$accent-color-300: hsl(214, 20%, 68%);
+$accent-color-400: hsl(214, 17%, 48%);
+$accent-color-500: hsl(214, 15%, 32%);
+$accent-color-600: hsl(214, 19%, 26%);
+$accent-color-700: hsl(214, 23%, 21%);
+$accent-color-900: hsl(214, 40%, 12%);
+
+$border-radius: 2rem;
 
 @font-face {
   font-family: Panchang;
