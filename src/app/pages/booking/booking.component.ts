@@ -13,7 +13,7 @@ import { RideDetailsFormComponent } from "../../components/ride-details-form/rid
 })
 export class BookingComponent {
   option: string | null = null;
-  index = 1;
+  index = 0;
 
   constructor(private route: ActivatedRoute) {}
 
