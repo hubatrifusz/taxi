@@ -27,12 +27,7 @@
     <app-personal-details-form></app-personal-details-form>
     } @else if (index == 1) {
     <app-ride-details-form></app-ride-details-form>
-    @if (option == 'company') {
-    <p>*plusz adatok a céghez*</p>
-    } @else if (option == 'private') { } @else if (option == 'pet') {
-    <p>*plusz adatok a kutyásoknak*</p>
-
-    } }
+    }
 
     <div id="controls">
       <button class="secondary-button" (click)="progressBarPrevious()">
