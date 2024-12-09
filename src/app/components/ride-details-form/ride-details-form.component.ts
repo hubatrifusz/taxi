@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CompanyFormComponent } from "../company-form/company-form.component";
 
 @Component({
   selector: 'app-ride-details-form',
   standalone: true,
-  imports: [CompanyFormComponent],
+  imports: [],
   templateUrl: './ride-details-form.component.html',
   styleUrl: './ride-details-form.component.scss',
 })

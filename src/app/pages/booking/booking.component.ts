@@ -1,19 +1,21 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { toArray } from 'rxjs';
-import { PersonalDetailsFormComponent } from "../../components/personal-details-form/personal-details-form.component";
-import { RideDetailsFormComponent } from "../../components/ride-details-form/ride-details-form.component";
+import { PersonalDetailsFormComponent } from '../../components/personal-details-form/personal-details-form.component';
+import { RideDetailsFormComponent } from '../../components/ride-details-form/ride-details-form.component';
+import { CompanyFormComponent } from "../../components/ride-details/company-form/company-form.component";
+import { FormOverviewComponent } from "../../components/form-overview/form-overview.component";
 
 @Component({
   selector: 'app-booking',
   standalone: true,
-  imports: [PersonalDetailsFormComponent, RideDetailsFormComponent],
+  imports: [PersonalDetailsFormComponent, RideDetailsFormComponent, CompanyFormComponent, FormOverviewComponent],
   templateUrl: './booking.component.html',
   styleUrl: './booking.component.scss',
 })
 export class BookingComponent {
   option: string | null = null;
-  index = 0;
+  currentPage = 1;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -23,29 +25,21 @@ export class BookingComponent {
     });
   }
 
-  progressBarNext() {
-    const progressBar = document.querySelector('#progress-bar') as HTMLElement;
-    const progressComponents = Array.from(progressBar.children);
+  formData: { [key: string]: any } = {};
 
-    if (this.index == 2) {
-      return;
-    }
-
-    progressComponents[this.index].classList.remove('active');
-    progressComponents[this.index + 1].classList.add('active');
-    this.index++;
+  updateFormData(data: any) {
+    this.formData = { ...this.formData, ...data };
   }
 
-  progressBarPrevious() {
-    const progressBar = document.querySelector('#progress-bar') as HTMLElement;
-    const progressComponents = Array.from(progressBar.children);
+  goToNextPage() {
+    this.currentPage++;
+  }
 
-    if (this.index == 0) {
-      return;
-    }
+  goToPreviousPage() {
+    this.currentPage--;
+  }
 
-    progressComponents[this.index].classList.remove('active');
-    progressComponents[this.index - 1].classList.add('active');
-    this.index--;
+  showOverview() {
+    this.currentPage = 3;
   }
 }

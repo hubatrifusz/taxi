@@ -23,17 +23,20 @@
       </div>
     </div>
 
-    @if (index == 0) {
-    <app-personal-details-form></app-personal-details-form>
-    } @else if (index == 1) {
-    <app-ride-details-form></app-ride-details-form>
+    @if (currentPage == 1) {
+    <app-personal-details-form
+      (formData)="updateFormData($event)"
+      (next)="goToNextPage()"
+    ></app-personal-details-form>
+    } @else if (currentPage == 2 && option == 'company') {
+    <app-company-form
+      (formData)="updateFormData($event)"
+      (previous)="goToPreviousPage()"
+      (submit)="showOverview()"
+      >></app-company-form
+    >
+    } @else if (currentPage == 3) {
+      <app-form-overview [data]="formData"></app-form-overview>
     }
-
-    <div id="controls">
-      <button class="secondary-button" (click)="progressBarPrevious()">
-        Vissza
-      </button>
-      <button class="primary-button" (click)="progressBarNext()">Tovább</button>
-    </div>
   </div>
 </div>

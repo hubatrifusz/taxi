@@ -1,19 +1,19 @@
 <div id="personal-details-form">
-  <form action="">
+  <form (ngSubmit)="onNext()">
     <div id="name" class="input-container">
       <label for=""><p>Név</p></label>
-      <input type="text" placeholder="Vezetéknév" style="margin-right: 1rem" />
-      <input type="text" placeholder="Keresztnév" />
+      <input type="text" placeholder="Vezetéknév" [(ngModel)]="formValues.lastName" name="lastName" style="margin-right: 1rem" />
+      <input type="text" placeholder="Keresztnév" [(ngModel)]="formValues.firstName" name="firstName"/>
     </div>
     <div id="email" class="input-container">
       <label for="email-input"><p>Email</p></label>
-      <input type="email" placeholder="nev@domain.com" id="email-input" />
+      <input type="email" placeholder="nev@domain.com" [(ngModel)]="formValues.email" id="email-input" name="email" />
     </div>
     <div id="phone" class="input-container">
       <label for=""><p>Telefonszám</p></label>
-      <input type="text" placeholder="+36 20 123 4567" id="email-input"/>
+      <input type="text" placeholder="+36 20 123 4567" [(ngModel)]="formValues.phone" id="email-input" name="phone"/>
     </div>
 
-    <button type="submit">SUBMIT</button>
+    <button type="submit">Tovább</button>
   </form>
 </div>
